@@ -66,9 +66,6 @@ export default function Home() {
           <span className="font-mono text-xs uppercase tracking-widest text-[#777777]">
             Independent Digital Studio · London
           </span>
-          <span className="font-mono text-xs uppercase tracking-widest text-[#777777] hidden sm:inline">
-            Est. 2022 · 51.5074° N, 0.1278° W
-          </span>
         </div>
 
         {/* Main Editorial Headline */}
