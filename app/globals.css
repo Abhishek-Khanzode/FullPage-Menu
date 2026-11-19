@@ -1,26 +1,50 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --canvas: #edeae3;
+  --canvas-surface: #f3f0ea;
+  --ink: #111111;
+  --ink-muted: #8e8d8a;
+  --ink-faint: rgba(17, 17, 17, 0.08);
+  --accent: #111111;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--canvas);
+  color: var(--ink);
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom serif utility class */
+.font-editorial {
+  font-family: 'Cormorant Garamond', Georgia, Cambria, 'Times New Roman', serif;
+}
+
+/* Custom subtle noise background */
+.bg-stone-canvas {
+  background-color: #edeae3;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #edeae3;
+}
+::-webkit-scrollbar-thumb {
+  background: #c8c4bc;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #aaa59c;
+}
+
+/* Luxury selection */
+::selection {
+  background: #111111;
+  color: #edeae3;
 }
