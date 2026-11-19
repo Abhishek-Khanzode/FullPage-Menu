@@ -59,7 +59,7 @@ export default function Home() {
       <main
         id="home"
         ref={heroRef}
-        className="relative z-10 flex-1 flex flex-col justify-between max-w-7xl w-full mx-auto px-6 sm:px-12 md:px-16 pt-28 sm:pt-32 pb-8 sm:pb-12"
+        className="relative z-10 flex-1 flex flex-col justify-between max-w-7xl w-full mx-auto px-6 sm:px-12 md:px-16 pt-28 sm:pt-36 pb-12 sm:pb-16"
       >
         {/* Top Tagline */}
         <div className="editorial-fade flex items-center justify-between border-b border-black/[0.08] pb-5">
@@ -69,32 +69,19 @@ export default function Home() {
         </div>
 
         {/* Main Editorial Headline */}
-        <div className="my-auto py-6 sm:py-10">
-          <h1 className="editorial-fade font-editorial text-5xl sm:text-7xl md:text-8xl lg:text-[100px] xl:text-[116px] font-normal tracking-tight leading-[0.98] text-[#111111] max-w-6xl">
+        <div className="my-auto py-8 sm:py-14">
+          <h1 className="editorial-fade font-editorial text-5xl sm:text-7xl md:text-8xl lg:text-[104px] xl:text-[120px] font-normal tracking-tight leading-[0.98] text-[#111111] max-w-6xl">
             Thoughtful craft <br />
             <span className="italic font-light text-[#555555]">for brands</span> that <br />
             shape modern culture.
           </h1>
 
-          <div className="editorial-fade mt-8 pt-8 border-t border-black/[0.08] flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+          <div className="editorial-fade mt-10 pt-8 border-t border-black/[0.08]">
             <p className="font-sans text-base sm:text-lg text-[#555555] max-w-2xl font-normal leading-relaxed">
               An award-winning editorial navigation experience engineered with GSAP
               curtain morphs, masked typographic reveals, and interactive vector physics.
             </p>
-            <div className="flex items-center gap-2.5 text-xs font-mono text-[#777777] shrink-0">
-              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-              <span className="uppercase">Available for Q1 2027</span>
-            </div>
           </div>
-        </div>
-
-        {/* Hero Bottom Ticker */}
-        <div className="editorial-fade flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-5 border-t border-black/[0.08] text-xs font-mono text-[#777777]">
-          <div className="flex items-center gap-3">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#111111]" />
-            <span className="uppercase">STUDIO ARCHIVE // EDITION 2027</span>
-          </div>
-          <div>LONDON // 51.5074° N, 0.1278° W</div>
         </div>
       </main>
     </div>
